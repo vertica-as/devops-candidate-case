@@ -1,0 +1,45 @@
+name: Lint Codebase
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      # Terraform linting med tflint
+      - name: Lint Terraform
+        run: |
+          cd iac
+          curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash
+          tflint
+          echo "Terraform linted!"
+
+      # Go linting med golint og staticcheck
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+      
+      - name: Run Go linter
+        run: |
+          cd healthcheck
+          go install golang.org/x/lint/golint@latest
+          golint ./...
+      
+      - name: Run Go static analysis
+        run: |
+          cd healthcheck
+          go install honnef.co/go/tools/cmd/staticcheck@latest
+          staticcheck ./...
+      
+      # Shell linting med shellcheck
+      - name: Lint Shell Script
+        run: |
+          sudo apt-get install -y shellcheck
+          shellcheck scripts/deploy.sh
+          echo "Shell script linted!"

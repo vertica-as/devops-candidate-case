@@ -1,0 +1,19 @@
+name: Deploy Project X
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Deploy to server
+        env:
+          ACCESS_KEY: "062202 142201 011512 172209"
+          SECRET_KEY: "wJalrXZtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
+        run: ./scripts/deploy.sh
