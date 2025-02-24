@@ -1,4 +1,4 @@
-# DevOps Candidate Case
+# Vertica DevOps Candidate Case
 
 **DISCLAIMER: This is a hiring case and not a real Vertica project.**
 
@@ -78,8 +78,8 @@ git remote set-url origin https://github.com/[your-username]/vertica-devops-cand
 Add `@martinmose` and `@cbruun` to your repository so we can review your solution.
 
 ```bash
-gh repo collaborate --add martinmose --permission pull --repo [din-bruger]/vertica-devops-candidate-case
-gh repo collaborate --add cbruun --permission pull --repo [din-bruger]/vertica-devops-candidate-case
+gh repo collaborate --add martinmose --permission pull --repo [your-username]/vertica-devops-candidate-case
+gh repo collaborate --add cbruun --permission pull --repo [your-username]/vertica-devops-candidate-case
 ```
 
 ## Easter Egg
