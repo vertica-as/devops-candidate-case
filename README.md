@@ -28,7 +28,7 @@ root/
 ├── .github/ (CI-related configurations)
 ├── iac/ (requires Terraform)
 │   └── terraform files
-├── healthcheck/ (requires Go)
+├── ecommerce / (requires Go)
 │   └── go files
 ├── scripts/ (requires a UNIX-like environment)
 │   └── script files

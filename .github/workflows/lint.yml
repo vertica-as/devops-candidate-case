@@ -27,13 +27,13 @@ jobs:
       
       - name: Run Go linter
         run: |
-          cd healthcheck
+          cd ecommerce 
           go install golang.org/x/lint/golint@latest
           golint ./...
       
       - name: Run Go static analysis
         run: |
-          cd healthcheck
+          cd ecommerce 
           go install honnef.co/go/tools/cmd/staticcheck@latest
           staticcheck ./...
       
