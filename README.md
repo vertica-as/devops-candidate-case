@@ -87,7 +87,3 @@ Add `@martinmose` and `@cbruun` to your repository so we can review your solutio
 gh repo collaborate --add martinmose --permission pull --repo [your-username]/vertica-devops-candidate-case
 gh repo collaborate --add cbruun --permission pull --repo [your-username]/vertica-devops-candidate-case
 ```
-
-## Easter Egg
-Maybe, just maybe, there’s a little easter egg hidden somewhere in the project. Happy hunting! 🎉
-Disclaimer: If you find it, be prepared to explain and understand what’s happening!
