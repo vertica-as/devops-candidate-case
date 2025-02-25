@@ -1,20 +1,15 @@
-FROM golang:1.22 as builder
+FROM ubuntu:18.04
 
-WORKDIR /healthcheck
+COPY . /
 
-COPY go.mod go.sum ./
-RUN go mod download
+RUN apt-get update && apt-get install -y golang-go nginx
 
-COPY . .
-RUN go build -o healthcheck .
+RUN go build -o ecommerce main.go
 
-FROM alpine:latest
+WORKDIR /randomfolder
 
-WORKDIR /app
-COPY --from=builder /app/healthcheck .
+COPY ecommerce /app/ecommerce
 
-RUN apk --no-cache add ca-certificates libc6-compat
+EXPOSE 80
 
-EXPOSE 8080
-
-CMD ["./healthcheck"]
+CMD ["/app/ecommerce"]
