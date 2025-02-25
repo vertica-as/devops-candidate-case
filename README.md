@@ -83,7 +83,3 @@ git remote set-url origin https://github.com/[your-username]/vertica-devops-cand
 ## Handover
 Add `@martinmose` and `@cbruun` to your repository so we can review your solution.
 
-```bash
-gh repo collaborate --add martinmose --permission pull --repo [your-username]/vertica-devops-candidate-case
-gh repo collaborate --add cbruun --permission pull --repo [your-username]/vertica-devops-candidate-case
-```
