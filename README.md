@@ -12,10 +12,13 @@ The problem? Everything looks totally chaotic… Help us save the day!
 
 ## Task
 We’d like you to take a look at the solution and send it back once you believe it meets the structure, coding style, quality, and best practices you consider necessary.
-In other words: There’s no right or wrong answer here. Review the parts that you think make sense to improve—there are no limits and no fixed expectations.
+In other words: There’s no right or wrong answer here. Review the parts that make sense to improve—there are no limits and no fixed expectations.
 
-We don’t expect you to spend an excessive amount of time understanding the task or delivering a perfect solution. 
-If there are things you don’t address, feel free to write down it down and then we can then discuss them during the interview!
+We don’t expect you to spend an excessive amount of time understanding the task or delivering a perfect—or even a fully working—solution.
+The repository contains several different components, and you are free to focus on just one of them. There is no requirement to cover everything.
+
+If there are aspects you don’t address, feel free to note them down so we can discuss them during the interview.
+While we have included specific technologies, you are welcome to use whatever tools and approaches you feel most comfortable with.
 
 ## Technologies
 This project consists of several components, each requiring specific technologies:
@@ -43,6 +46,9 @@ We have created a small guide on how to get started with our solution.
 We want the solution to be in a private repository, so we’ve provided a guide on creating a new repository.
 
 ### Clone
+
+**We’ve provided a specific guide to ensure you don’t fork the repository and accidentally make your solution public.**
+
 Clone this repository and change the remote to your own repository.
 
 ```bash
