@@ -90,3 +90,4 @@ gh repo collaborate --add cbruun --permission pull --repo [your-username]/vertic
 
 ## Easter Egg
 Maybe, just maybe, there’s a little easter egg hidden somewhere in the project. Happy hunting! 🎉
+Disclaimer: If you find it, be prepared to explain and understand what’s happening!
